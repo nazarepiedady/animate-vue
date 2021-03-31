@@ -7,6 +7,10 @@
 <script>
 export default {
   name: 'Simple',
+  methods: {
+    beforeEnter(el) {},
+    enter(el, done) {},
+  },
 }
 </script>
 
