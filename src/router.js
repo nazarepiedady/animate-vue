@@ -26,6 +26,11 @@ export default new Router({
       path: '/drawer',
       name: 'drawer',
       component: () => import('./views/Drawer.vue')
+    },
+    {
+      path: '/cards',
+      name: 'cards',
+      component: () => import('./views/Cards.vue')
     }
   ]
 })
