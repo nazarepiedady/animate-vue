@@ -83,4 +83,13 @@ button {
   opacity: 0;
   transform: translate3d(-10px, 0, 0);
 }
+
+.slide-up-enter {
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+}
+
+.slide-up-enter-active {
+  transition: all 0.2s ease-in-out;
+}
 </style>
