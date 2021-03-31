@@ -42,7 +42,7 @@ export default {
         },
         {
           duration: 1000,
-          easing: 'easeOutCubic',
+          easing: [60, 10],
           complete: done,
         }
       )
