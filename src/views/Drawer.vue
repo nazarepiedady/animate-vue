@@ -47,6 +47,20 @@ export default {
         }
       )
     },
+    leave(el, done) {
+      Velocity(
+        el,
+        {
+          opacity: 0,
+          width: '0em',
+        },
+        {
+          duration: 500,
+          easing: 'easeInCubic',
+          complete: done,
+        }
+      )
+    },
   },
 }
 </script>
