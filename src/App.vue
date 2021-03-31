@@ -20,8 +20,8 @@
 }
 
 button {
-  width: 5em;
-  height: 2em;
+  /* width: 5em; */
+  padding: 0.6em 0.5em;
   margin: 0.5em;
   border-radius: 5px;
   background: linear-gradient(to right, #16c0b0, #84cf6a);
