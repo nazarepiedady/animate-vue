@@ -24,8 +24,29 @@ export default {
       ],
     }
   },
+  methods: {
+    beforeEnter(el) {
+      el.style.opacity = 0
+      el.style.width = '0em'
+    },
+    enter(el, done) {
+      Velocity(
+        el,
+        { opacity: 1, width: '12em', rotateZ: '3deg' },
+        { duration: 1000, easing: [70, 8], complete: done }
+      )
+    },
+  },
 }
 </script>
 
 <style>
+.card {
+  width: 12em;
+  height: 4em;
+  padding-top: 1em;
+  border-radius: 1%;
+  background-color: #e0e0e0;
+  box-shadow: 0.08em 0.03em 0.4em #ababab;
+}
 </style>
