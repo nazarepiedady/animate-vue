@@ -1,4 +1,15 @@
-<template></template>
+<template>
+  <transition-group
+    appear
+    @before-enter="beforeEnter"
+    @enter="enter"
+    :css="false"
+  >
+    <div class="card" v-for="card in cards" :key="card.id">
+      <p>{{ card.title }}</p>
+    </div>
+  </transition-group>
+</template>
 
 <script>
 import Velocity from 'velocity-animate'
