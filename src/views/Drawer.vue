@@ -28,6 +28,26 @@ export default {
       isOpen: false,
     }
   },
+  methods: {
+    beforeEnter(el) {
+      el.style.opacity = 0
+      el.style.width = '0em'
+    },
+    enter(el, done) {
+      Velocity(
+        el,
+        {
+          opacity: 1,
+          width: '12em',
+        },
+        {
+          duration: 1000,
+          easing: 'easeOutCubic',
+          complete: done,
+        }
+      )
+    },
+  },
 }
 </script>
 
