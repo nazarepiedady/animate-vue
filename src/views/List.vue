@@ -3,7 +3,7 @@
     <input type="text" v-model="newContact" placeholder="Name" />
     <button @click="addContact">Add Contact</button>
 
-    <transition-group name="slide-up" tag="ul">
+    <transition-group name="slide-up" tag="ul" appear>
       <li v-for="contact in contacts" :key="contact">
         {{ contact }}
       </li>
